@@ -3,7 +3,7 @@ FROM jenkins/jenkins:$JENKINS_VERSION
 MAINTAINER Oleg Nenashev <o.v.nenashev@gmail.com>
 LABEL Description="This demo shows how to setup Jenkins Config-as-Code with Docker, Pipeline, and Groovy Hook Scripts" Vendor="Oleg Nenashev" Version="0.2"
 
-# Plugin Installation Manager
+# Plugin Installation Manager (t)his is a test comment)
 ARG PLUGIN_MANAGER_TOOL_VERSION=1.0.2
 RUN wget https://github.com/jenkinsci/plugin-installation-manager-tool/releases/download/plugin-management-parent-pom-$PLUGIN_MANAGER_TOOL_VERSION/jenkins-plugin-manager-$PLUGIN_MANAGER_TOOL_VERSION.jar -O /usr/share/jenkins/ref/jenkins-plugin-manager.jar
 
